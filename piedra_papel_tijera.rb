@@ -5,14 +5,16 @@ def menu
     puts "4. Salir"
 end
 
-puts "Bienvenido al torneo anual de CA-CHI-PUN"
-puts "Turno Jugador 1"
 
-menu
-opcion1 = gets.chomp
-opcion2 = ''
+
+opcion1 = " "
+opcion2 = " "
 
 while opcion1 != "4" && opcion2 != "4"
+    puts "Bienvenido al torneo anual de CA-CHI-PUN"
+    puts "Turno Jugador 1"
+    menu
+    opcion1 = gets.chomp
     case opcion1
     when "1"
         puts "Jugador 1 escoge Piedra"
